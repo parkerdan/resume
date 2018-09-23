@@ -172,7 +172,7 @@ export default class App extends React.Component {
               <Links />
             </div>
             <div className={css(styles.divider)}/>
-            <div className={css(styles.flexRow)}>
+            <div className={css(styles.flexRowSkills)}>
               <Skills />
             </div>
           </div>
@@ -234,8 +234,8 @@ const styles = StyleSheet.create({
     },
   },
   imageLarge: {
-    height: '88px',
-    width: '88px',
+    height: '90px',
+    width: '90px',
     margin: '0px 60px 10px 0px',
 
     '@media (max-width: 1350px)': {
@@ -243,8 +243,14 @@ const styles = StyleSheet.create({
     },
 
     '@media (max-width: 600px)': {
-      height: '70px',
-      width: '70px',
+      height: '90px',
+      width: '90px',
+    },
+
+
+    '@media (max-width: 600px)': {
+      height: '60px',
+      width: '60px',
       margin: '0px 3px 10px 0px',
     },
   },
@@ -264,12 +270,21 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
+    justifyContent: 'space-between',
+  },
+  flexRowSkills: {
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
     justifyContent: 'flex-start',
 
-    '@media (max-width: 600px)': {
+
+    '@media (max-width: 900px)': {
       justifyContent: 'space-between',
     }
   },
+
 
   textH1: {
     fontFamily: 'mes-rg',
