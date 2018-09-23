@@ -1,11 +1,12 @@
 {
-  "name": "site",
+  "name": "resume",
   "version": "0.1.0",
   "private": true,
   "homepage": "http://parkerdan.github.io/resume",
   "dependencies": {
     "animated": "^0.2.2",
     "aphrodite": "^2.2.3",
+    "gh-pages": "^2.0.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.5"
@@ -17,8 +18,5 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-  },
-  "devDependencies": {
-    "gh-pages": "^2.0.0"
   }
 }

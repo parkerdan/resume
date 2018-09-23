@@ -276,6 +276,9 @@ const styles = StyleSheet.create({
     fontSize: '100px',
     '@media (max-width: 600px)': {
       fontSize: '65px',
+    },
+    '@media (max-width: 380px)': {
+      fontSize: '55px',
     }
   },
   textH2: {
@@ -284,6 +287,9 @@ const styles = StyleSheet.create({
     fontSize: '80px',
     '@media (max-width: 600px)': {
       fontSize: '50px',
+    },
+    '@media (max-width: 380px)': {
+      fontSize: '40px',
     }
   },
   textH3: {
