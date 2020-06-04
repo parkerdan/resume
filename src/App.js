@@ -138,7 +138,7 @@ function Links() {
           <img alt={link.alt} src={link.src} className={css(styles.imageLarge)}/>
         </a>
       ))}
-      <a href="https://s3-us-west-1.amazonaws.com/parker-resume/parker.pdf" target="_blank">
+      <a href="https://s3-us-west-1.amazonaws.com/parker-resume/parker.pdf" rel="noopener noreferrer" target="_blank">
         <img alt={'resume'} src={Resume} className={css(styles.imageLarge)}/>
       </a>
     </React.Fragment>
@@ -156,37 +156,33 @@ function Skills() {
   ));
 }
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <div className={css(styles.container)}>
-        <div className={css(styles.imageBackground)}>
-          <h1 className={css(styles.textH1)}>Dan Parker</h1>
-          <p className={css(styles.textH2)}>Developer</p>
-        </div>
-        <div className={css(styles.containerContent)}>
-          <p className={css(styles.textH3)}>"I build elegant front end solutions and scalable, real-time backend services as a core member of Uber's Innovation Team."</p>
-
-          <div className={css(styles.containerFooter)}>
-            <div className={css(styles.flexRow)}>
-              <Links />
-            </div>
-            <div className={css(styles.divider)}/>
-            <div className={css(styles.flexRow)}>
-              <Skills />
-            </div>
-          </div>
-
-        </div>
+export default function App() {
+  return (
+    <div className={css(styles.container)}>
+      <div className={css(styles.imageBackground)}>
+        <h1 className={css(styles.textH1)}>Dan Parker</h1>
+        <p className={css(styles.textH2)}>Software Engineer</p>
       </div>
-    );
-  }
+      <div className={css(styles.containerContent)}>
+        <p className={css(styles.textH3)}>"I build elegant front end solutions and scalable, real-time backend services as a core member of Uber's Innovation Team."</p>
+
+        <div className={css(styles.containerFooter)}>
+          <div className={css(styles.flexRow)}>
+            <Links />
+          </div>
+          <div className={css(styles.divider)}/>
+          <div className={css(styles.flexRow)}>
+            <Skills />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
 }
 
-const secondary = '#241b24';
-// const secondary = '#2e1d2d';
-
-
+const primary = '#000'
+const secondary = '#241b24'
 
 const styles = StyleSheet.create({
   container: {
@@ -272,6 +268,7 @@ const styles = StyleSheet.create({
   },
 
   textH1: {
+    color: primary,
     fontFamily: 'mes-rg',
     fontSize: '100px',
     '@media (max-width: 600px)': {
@@ -281,9 +278,9 @@ const styles = StyleSheet.create({
   textH2: {
     color: secondary,
     fontFamily: 'mes-lt',
-    fontSize: '80px',
+    fontSize: '55px',
     '@media (max-width: 600px)': {
-      fontSize: '50px',
+      fontSize: '45px',
     }
   },
   textH3: {
@@ -303,6 +300,4 @@ const styles = StyleSheet.create({
       margin: '40px 20px'
     }
   },
-
-
 })
