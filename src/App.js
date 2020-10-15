@@ -161,7 +161,7 @@ export default function App() {
     <div className={css(styles.container)}>
       <div className={css(styles.imageBackground)}>
         <h1 className={css(styles.textH1)}>Dan Parker</h1>
-        <p className={css(styles.textH2)}>Software Engineer</p>
+        <p className={css(styles.textH2)}>Sr Software Engineer</p>
       </div>
       <div className={css(styles.containerContent)}>
         <p className={css(styles.textH3)}>"I build elegant front end solutions and scalable, real-time backend services as a core member of Uber's Innovation Team."</p>
