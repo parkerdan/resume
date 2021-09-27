@@ -164,7 +164,9 @@ export default function App() {
         <p className={css(styles.textH2)}>Sr Software Engineer</p>
       </div>
       <div className={css(styles.containerContent)}>
-        <p className={css(styles.textH3)}>"I work for Uber building elegant front end solutions and scalable, real-time backend services."</p>
+        <p className={css(styles.textH3)}>"I build elegant front end solutions and scalable, real-time backend services taking concepts and wireframes to full function"</p>
+        <p className={css(styles.textH4)}>{'Currently employed at Uber.\nHighly skilled in JavaScript, especially React.\nI enjoy building products using GraphQL.'}</p>
+
         <div className={css(styles.containerFooter)}>
           <div className={css(styles.flexRow)}>
             <Links />
@@ -297,6 +299,24 @@ const styles = StyleSheet.create({
     '@media (max-width: 600px)': {
       fontSize: '23px',
       margin: '40px 20px'
+    }
+  },
+  textH4: {
+    color: secondary,
+    fontFamily: 'mes-lt',
+    fontSize: '32px',
+    textAlign: 'center',
+    margin: '40px 100px',
+    whiteSpace: 'pre',
+
+    '@media (max-width: 1150px)': {
+      fontSize: '30px',
+      margin: '30px 40px',
+    },
+
+    '@media (max-width: 600px)': {
+      fontSize: '23px',
+      margin: '20px 20px'
     }
   },
 })
