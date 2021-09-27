@@ -164,8 +164,7 @@ export default function App() {
         <p className={css(styles.textH2)}>Sr Software Engineer</p>
       </div>
       <div className={css(styles.containerContent)}>
-        <p className={css(styles.textH3)}>"I build elegant front end solutions and scalable, real-time backend services as a core member of Uber's Innovation Team."</p>
-
+        <p className={css(styles.textH3)}>"I work for Uber building elegant front end solutions and scalable, real-time backend services."</p>
         <div className={css(styles.containerFooter)}>
           <div className={css(styles.flexRow)}>
             <Links />
